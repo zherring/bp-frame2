@@ -110,11 +110,12 @@ export default async function Home({
           </div>
       </FrameImage>
         
-        <FrameButton action="post" onClick={dispatch as any}>
+        <FrameButton action="post" {...{ onClick: dispatch as any }}>
           Prev
         </FrameButton>
+
         {state.current !== daysSinceTargetDate ? (
-          <FrameButton action="post" onClick={dispatch as any}>
+          <FrameButton action="post" {...{ onClick: dispatch as any }}>
             Next
           </FrameButton>
         ) : null} 
@@ -125,7 +126,7 @@ export default async function Home({
           </FrameButton>
         ) : (
           <FrameButton action="link" target={`${osURL}${state.current}`}>
-            Buy on OpenSea
+            Buy on OS
           </FrameButton>
         )} 
       </FrameContainer>
