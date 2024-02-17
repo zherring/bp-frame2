@@ -125,7 +125,7 @@ export default async function Home({
           </FrameButton>
         ) : (
           <FrameButton action="link" target={`${osURL}${state.current}`}>
-            Buy on OS
+            Buy on OpenSea
           </FrameButton>
         )} 
       </FrameContainer>
