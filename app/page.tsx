@@ -110,11 +110,11 @@ export default async function Home({
           </div>
       </FrameImage>
         
-        <FrameButton onClick={dispatch}>
+        <FrameButton action="post" onClick={dispatch as any}>
           Prev
         </FrameButton>
         {state.current !== daysSinceTargetDate ? (
-          <FrameButton onClick={dispatch}>
+          <FrameButton action="post" onClick={dispatch as any}>
             Next
           </FrameButton>
         ) : null} 
