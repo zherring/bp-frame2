@@ -121,7 +121,7 @@ export default async function Home({
         ) : null} 
 
       {state.current === daysSinceTargetDate ? ( 
-          <FrameButton action="link" target="https://basepaint.xyz/mint">
+          <FrameButton action="mint" target="https://basepaint.xyz/mint">
             Mint
           </FrameButton>
         ) : (
