@@ -106,7 +106,7 @@ export default async function Home({
 
       <FrameImage>
           <div tw="flex w-full h-full bg-black text-white justify-center items-center">
-            <img src={`https://basepaint.xyz/api/art/image?day=${state.current}&scale=5`} height={600} width={600} />
+            <img src={`https://basepaint.xyz/api/art/image?day=${state.current}&scale=2`} height={600} width={600} />
           </div>
       </FrameImage>
         
